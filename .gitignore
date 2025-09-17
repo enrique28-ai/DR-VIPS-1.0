@@ -1,0 +1,77 @@
+# --- SO/editores ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Node (monorepo: backend + frontend) ---
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.pnpm-store/
+.eslintcache
+*.tsbuildinfo
+
+# --- Logs ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Entornos (NO subir secretos) ---
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# --- Builds / caches ---
+dist/
+**/dist/
+build/
+**/build/
+.vite/
+**/.vite/
+.cache/
+**/.cache/
+.parcel-cache/
+
+# --- Pruebas / cobertura / e2e ---
+coverage/
+.nyc_output/
+cypress/videos/
+cypress/screenshots/
+junit.xml
+
+# --- Subidas locales (si usas uploads en backend) ---
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# --- Herramientas de despliegue comunes ---
+.vercel/
+.netlify/
+.now/
+
+# --- Otros temporales ---
+tmp/
+temp/
+pids/
+*.pid
+*.pid.lock
+
+# --- SO macOS extras ---
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
